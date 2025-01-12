@@ -1,0 +1,111 @@
+/* Všeobecné pozadie stránky */
+main {
+  background: linear-gradient(to bottom, #b71c1c, #000000); /* Tmavočervená do čiernej */
+  color: #ffffff;
+  min-height: 100vh;
+  
+}
+.banner-content {
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8); /* Jemný tieň textu */
+}
+h1 i {
+  margin-right: 10px; /* Odstup medzi ikonou a textom */
+}
+/* Upravené pozadie sekcie "O nás" */
+.container.my-5.bg-dark {
+  background: linear-gradient(135deg, #1e272e, #485460); /* Jemný gradient */
+  border-radius: 10px; /* Zaoblené rohy */
+  padding: 2rem; /* Vnútorné odsadenie */
+}
+
+/* Text v sekcii "O nás" */
+.container.my-5.bg-dark h2 {
+  color: #ffffff; /* Biely text */
+  font-weight: bold;
+}
+
+.container.my-5.bg-dark p {
+  color: #d2dae2; /* Svetlejší odtieň textu pre jemnosť */
+  font-size: 1.2rem; /* Väčší text */
+  line-height: 1.8; /* Lepšia čitateľnosť */
+}
+
+/* Tlačidlá */
+.btn-primary {
+  background-color: #4a69bd; /* Modrá farba tlačidla */
+  border-color: #4a69bd;
+}
+
+.btn-primary:hover {
+  background-color: #1e3799; /* Tmavšia modrá pri hover */
+  border-color: #1e3799;
+}
+
+/* Karty - zvýraznenie pri hover */
+.card {
+  background: #2f3640; /* Tmavé pozadie pre karty */
+  color: #ffffff;
+}
+
+.card:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Zvýraznenie tieňa */
+  transform: scale(1.03); /* Jemný efekt zväčšenia */
+}
+
+/* Navigácia */
+.navbar-custom {
+  background-color: #000000; /* Čierna */
+  color: #ffffff; /* Biely text */
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 1); /* Jemný tieň */
+  position: fixed; /* Navigácia pevne umiestnená */
+  top: 0; /* Pripevnite ju k vrchu */
+  width: 100%; /* Šírka na celú obrazovku */
+  z-index: 1050; /* Vysoká priorita na vrstvenie */
+}
+
+
+.navbar-custom .navbar-brand,
+.navbar-custom .nav-link {
+  color: #ffffff; /* Biela farba textu */
+  transition: color 0.3s ease;
+}
+
+.navbar-custom .nav-link:hover {
+  color: #ffcccb; /* Svetločervená pri hover */
+}
+
+.navbar-custom .active {
+  color: #ff6f61; /* Oranžovo-červená pre aktívnu položku */
+  font-weight: bold;
+}
+
+.navbar-custom .navbar-toggler {
+  background-color: #ffffff; /* Biela farba pre hamburger menu */
+}
+
+.navbar-custom .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=UTF8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgb(183,28,28)' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+/* Extra štýly pre mobilné zariadenia */
+@media (max-width: 768px) {
+  .navbar-custom .navbar-nav {
+    text-align: center;
+  }
+  .navbar-custom .nav-item {
+    margin: 5px 0;
+  }
+}
+body {
+  background: linear-gradient(to bottom, #b71c1c, #000000); /* Tmavočervená do čiernej */
+  color: #ffffff;
+  margin: 0; /* Odstráni okraje */
+  padding: 0;
+  min-height: 100vh; /* Celé pozadie pokrýva obrazovku */
+  overflow-x: hidden; /* Zabraňuje horizontálnemu posunu */
+}
+
+main {
+  background: transparent; /* Nech sa dedí pozadie z body */
+  color: inherit; /* Dediť farbu textu */
+}
