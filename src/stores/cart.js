@@ -2,7 +2,7 @@ import { defineStore } from 'pinia';
 
 export const useCartStore = defineStore('cart', {
   state: () => ({
-    items: [], // Produkty v košíku
+    items: [], // Produkty v košiku
   }),
   getters: {
     totalItems: (state) => state.items.reduce((sum, item) => sum + item.quantity, 0),
