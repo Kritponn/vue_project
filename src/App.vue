@@ -1,6 +1,6 @@
 <template>
   <div>
-    <!-- Navigácia -->
+    
     <nav class="navbar navbar-expand-lg navbar-custom">
   <div class="container">
     <router-link class="navbar-brand" to="/">Virtuálna Komunita</router-link>

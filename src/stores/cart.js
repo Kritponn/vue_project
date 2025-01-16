@@ -20,7 +20,7 @@ export const useCartStore = defineStore('cart', {
     },
     removeFromCart(productId) {
       
-      this.items = this.items.filter((item) => item.id !== productId);
+      this.items = this.items.filter((item) => item.id !== productId);/*filter metoda nove pole bez id itemu*/
       
     },
   },

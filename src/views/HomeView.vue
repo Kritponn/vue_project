@@ -102,10 +102,10 @@
 <script>
 export default {
   name: "HomeView",
-  data() {
+  data() { /*funkcia ukladnie do datoveho objektu*/
     return {
-      bannerImage: new URL('@/assets/banner.jpg', import.meta.url).href,
-      event1: new URL('@/assets/event1.jpg', import.meta.url).href,
+      
+      event1: new URL('@/assets/event1.jpg', import.meta.url).href,/*@ ktorý odkazuje na koreňovú src zložku*/
       event2: new URL('@/assets/event2.jpg', import.meta.url).href,
     };
   },
