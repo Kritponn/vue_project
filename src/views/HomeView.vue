@@ -5,7 +5,6 @@
   <!--<img :src="bannerImage" alt="Virtuálna Komunita" class="img-fluid banner-image" />-->
 </div>
 
-
 <br>
 <br>
     <div class="container text-center my-5 bg-light shadow-sm rounded py-5" style="background: linear-gradient(135deg, #e8f3ff, #f7e8ff);">
